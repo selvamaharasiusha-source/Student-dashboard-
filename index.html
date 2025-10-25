@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">College Student Dashboard</div>
+    <ul>
+      <li><a href="#" data-page="home" class="active">Home</a></li>
+      <li><a href="#" data-page="attendance">Attendance</a></li>
+      <li><a href="#" data-page="timetable">Timetable</a></li>
+      <li><a href="#" data-page="marks">Marks</a></li>
+      <li><a href="#" data-page="notices">Notices</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home" class="page active">
+      <h1>Welcome, Student!</h1>
+      <p>Access all your academic details in one place.</p>
+    </section>
+    <section id="attendance" class="page">
+      <h2>Attendance</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Attended</th>
+            <th>Total</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody id="attendance-data"></tbody>
+      </table>
+    </section>
+    <section id="timetable" class="page">
+      <h2>Timetable</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>9-10 AM</th>
+            <th>10-11 AM</th>
+            <th>11-12 PM</th>
+            <th>12-1 PM</th>
+            <th>2-3 PM</th>
+            <th>3-4 PM</th>
+          </tr>
+        </thead>
+        <tbody id="timetable-data"></tbody>
+      </table>
+    </section>
+    <section id="marks" class="page">
+      <h2>Marks</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Internal</th>
+            <th>External</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="marks-data"></tbody>
+      </table>
+    </section>
+    <section id="notices" class="page">
+      <h2>College Notices</h2>
+      <ul id="notices-data"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
